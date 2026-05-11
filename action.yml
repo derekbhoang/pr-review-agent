@@ -1,0 +1,14 @@
+name: PR Review Agent
+description: Reviews pull requests and post high-confidence line-anchored findings.
+
+inputs:
+  github-token:
+    description: Token used to read pull request data and post review comments.
+    required: true
+  openai-api-key:
+    description: OpenAI API key used by the review agent.
+    required: true
+
+runs:
+  using: node20
+  main: dist/index.js
