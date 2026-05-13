@@ -6,7 +6,7 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/index.ts -o dist --target es2022 --source-map --license licenses.txt",
+    "build": "ncc build src/index.ts -o dist --target es2024 --source-map --license licenses.txt",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
