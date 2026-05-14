@@ -28633,6 +28633,7 @@ async function run() {
         _actions_core__WEBPACK_IMPORTED_MODULE_0__/* .info */ .pq("PR Review Agent inputs loaded.");
         const pullRequestContext = getPullRequestContext();
         _actions_core__WEBPACK_IMPORTED_MODULE_0__/* .info */ .pq(`Reviewing PR #${pullRequestContext.pr.number}: ${pullRequestContext.content.title}`);
+        _actions_core__WEBPACK_IMPORTED_MODULE_0__/* .info */ .pq(`Pull request context:\n${JSON.stringify(pullRequestContext, null, 2)}`);
     }
     catch (error) {
         const message = error instanceof Error ? error.message : String(error);

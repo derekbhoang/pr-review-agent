@@ -94,6 +94,9 @@ async function run(): Promise<void> {
     core.info(
       `Reviewing PR #${pullRequestContext.pr.number}: ${pullRequestContext.content.title}`,
     );
+    core.info(
+      `Pull request context:\n${JSON.stringify(pullRequestContext, null, 2)}`,
+    );
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     core.setFailed(message);
